@@ -1,4 +1,4 @@
-# Systems Security Plan
+# Page 1
 
 **Prepared by**
 
@@ -456,11 +456,8 @@ _Delete this and all other instructions from your final version of this document
 
 A detailed and explicit definition of the system authorization boundary diagram is represented in Figure 9-1 Authorization Boundary Diagram below.
 
-
-
-`/<Diagram/>`
-
-
+| ![](file:///Users/austinsonger/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip\_image002.jpg) |
+| -------------------------------------------------------------------------------------------------------------------------- |
 
 _Figure 9-1 Authorization Boundary Diagram_
 
@@ -468,14 +465,17 @@ _Figure 9-1 Authorization Boundary Diagram_
 
 All personnel have their status categorized with a sensitivity level in accordance with PS-2.  Personnel (employees or contractors) of service providers are considered Internal Users.  All other users are considered External Users.  User privileges (authorization permission after authentication takes place) are described in Table 9-1 Personnel Roles and Privileges that follows.
 
-_**Table 9-1. Personnel Roles and Privileges**_
+_Table 9-1. Personnel Roles and Privileges_
 
-| Role | Internal or External | Privileged (P), Non-Privileged (NP), or No Logical Access (NLA) | Sensitivity Level | Authorized Privileges | Functions Performed |
-| ---- | -------------------- | --------------------------------------------------------------- | ----------------- | --------------------- | ------------------- |
-|      |                      |                                                                 |                   |                       |                     |
-|      |                      |                                                                 |                   |                       |                     |
-|      |                      |                                                                 |                   |                       |                     |
-|      |                      |                                                                 |                   |                       |                     |
+| Role                               | Internal or External | Privileged (P), Non-Privileged (NP), or No Logical Access (NLA) | Sensitivity Level | Authorized Privileges              | Functions Performed                                                                                                                                             |
+| ---------------------------------- | -------------------- | --------------------------------------------------------------- | ----------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Director of Information Security   | Internal             | P                                                               | Moderate          | Full administrative access  (root) |  Add/remove users  and hardware, install  and configure  software, OS  updates, patches and  hotfixes, perform  backups. Reviews,  approves and enforces policy |
+| Director of Infrastructure         |                      |                                                                 |                   |                                    | Add/remove users and hardware, install and configure software, OS updates, patches, and hotfixes, perform backups.                                              |
+| Infrastructure Operations Engineer |                      |                                                                 |                   |                                    | Add/remove users and hardware, install and configure software, OS updates, patches, and hotfixes, perform backups., approves and enforces policy                |
+|                                    |                      |                                                                 |                   |                                    |                                                                                                                                                                 |
+|                                    |                      |                                                                 |                   |                                    |                                                                                                                                                                 |
+|                                    |                      |                                                                 |                   |                                    |                                                                                                                                                                 |
+|                                    |                      |                                                                 |                   |                                    |                                                                                                                                                                 |
 
 There are currently five internal personnel and 0 external personnel.  Within one year, it is anticipated that there will be five internal personnel and 0 external personnel.
 
@@ -490,7 +490,7 @@ The following Figure 9-2 Network Diagram(s) provides a visual depiction of the s
 | <p> </p><p><img src="file:///Users/austinsonger/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.jpg" alt=""></p><p> </p> |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-_**Figure 9-2 Network Diagram**_
+_Figure 9-2 Network Diagram_
 
 &#x20;
 
@@ -516,10 +516,18 @@ Table 10-1 Ports, Protocols and Services below lists the ports, protocols and se
 
 _Table 10-1 Ports, Protocols and Services_
 
-| Ports (TCP/UDP)\* | Protocols | Services | Purpose     | Used By             |
-| ----------------- | --------- | -------- | ----------- | ------------------- |
-| 22                | TCP       | SSH      | Private SSH | FormAssembly Admins |
-| 80                | TCP       | HTTP     | TLS 1.2     | Customer            |
+| Ports (TCP/UDP)\* | Protocols | Services   | Purpose                                                                                                                                 | Used By             |
+| ----------------- | --------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| 22                | TCP       | SSH        | Private SSH                                                                                                                             | FormAssembly Admins |
+| 80                | TCP       | HTTP       | TLS 1.2                                                                                                                                 | Customer            |
+| 9000              | TCP       | ELB        | HAProxy for Elastic, this sets up a listener on port 9000 in HTTP mode with statistics enabled.                                         | FormAssembly Admins |
+| 8080              | TCP       | Custom TCP | HAProxy - installed in front of an existing web server that needs some DoS protection.                                                  | FormAssembly Admins |
+| 8443              | TCP       | Custom TCP | ELB - load balancer with a listener that accepts HTTP requests on port 80 and accepts HTTPS requests on port 443.                       | FormAssembly Admins |
+| 443               | TCP       | HTTPS      | Bastion Host - Reduces exposure of servers within the VPC, so a bastion host was created.                                               | FormAssembly Admins |
+| 25                | TCP       | SMTP       | Mail-server- Email through Amazon SES and connectors.                                                                                   | FormAssembly Admins |
+| 3306              | TCP       | Aurora     | Aurora - Amazon Aurora is a MySQL and PostgreSQL- compatible relational database.                                                       | FormAssembly Admins |
+| All               | ICMP      | MySQL      | MySQL - open-source relational database and Amazon RDS.                                                                                 | FormAssembly Admins |
+| 2049              | TCP       | NFS        | RHEL- allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. | FormAssembly Admins |
 
 \* Transmission Control Protocol (TCP), User Diagram Protocol (UDP)
 
@@ -1542,9 +1550,9 @@ _Responsible Role_ indicates the role of CSP employee who can best respond to qu
 
 
 
+### 13.1 Access Control (AC)
 
-
-### AC-1 Access Control Policy and Procedures Requirements (L) (M)
+#### AC-1 Access Control Policy and Procedures Requirements (L) (M)
 
 The organization:
 
@@ -1572,7 +1580,7 @@ The organization:
 | Part b1                                              |
 | Part b2                                              |
 
-### AC-2 Account Management (L) (M)
+#### AC-2 Account Management (L) (M)
 
 The organization:
 
@@ -1620,7 +1628,7 @@ The organization:
 | Part j                                               |
 | Part k                                               |
 
-### AC-2 (1) Control Enhancement (M) (H)
+#### AC-2 (1) Control Enhancement (M) (H)
 
 The organization employs automated mechanisms to support the management of information system accounts.
 
@@ -1634,7 +1642,7 @@ The organization employs automated mechanisms to support the management of infor
 | -------------------------------------------------------- |
 |                                                          |
 
-### AC-2 (2) Control Enhancement (M)
+#### AC-2 (2) Control Enhancement (M)
 
 The information system automatically \[Selection: removes; disables] temporary and emergency accounts after \[FedRAMP Assignment: no more than 30 days for temporary and emergency account types].
 
@@ -1650,7 +1658,7 @@ The information system automatically \[Selection: removes; disables] temporary a
 | -------------------------------------------------------- |
 |                                                          |
 
-### AC-2 (3) Control Enhancement (M)
+#### AC-2 (3) Control Enhancement (M)
 
 The information system automatically disables inactive accounts after \[FedRAMP Assignment: ninety (90) days for user accounts].\
 AC-2 (3) Additional FedRAMP Requirements and Guidance:\
@@ -1667,7 +1675,7 @@ Requirement: The service provider defines the time period for non-user accounts 
 | -------------------------------------------------------- |
 |                                                          |
 
-### AC-2 (4) Control Enhancement (M)
+#### AC-2 (4) Control Enhancement (M)
 
 The information system automatically audits account creation, modification, enabling, disabling, and removal actions, and notifies \[Assignment: organization-defined personnel or roles].
 
@@ -1682,7 +1690,7 @@ The information system automatically audits account creation, modification, enab
 | -------------------------------------------------------- |
 |                                                          |
 
-### AC-2 (5) Control Enhancement (M)
+#### AC-2 (5) Control Enhancement (M)
 
 The organization requires that users log out when \[Assignment: organization-defined time-period of expected inactivity or description of when to log out].\
 AC-2 (5) Additional FedRAMP Requirements and Guidance:\
@@ -1699,7 +1707,7 @@ Guidance: Should use a shorter timeframe than AC-12
 | -------------------------------------------------------- |
 |                                                          |
 
-### AC-2 (7) Control Enhancement (M)
+#### AC-2 (7) Control Enhancement (M)
 
 The organization:
 
@@ -1720,7 +1728,7 @@ The organization:
 | Part b                                                   |
 | Part c                                                   |
 
-### AC-2 (9) Control Enhancement (M)
+#### AC-2 (9) Control Enhancement (M)
 
 The organization only permits the use of shared/group accounts that meet \[Assignment: organization-defined conditions for establishing shared/group accounts].\
 AC-2 (9) Additional FedRAMP Requirements and Guidance: Required if shared/group accounts are deployed.
@@ -1736,7 +1744,7 @@ AC-2 (9) Additional FedRAMP Requirements and Guidance: Required if shared/group 
 | -------------------------------------------------------- |
 |                                                          |
 
-### AC-2 (10) Control Enhancement (M) (H)
+#### AC-2 (10) Control Enhancement (M) (H)
 
 The information system terminates shared/group account credentials when members leave the group.\
 AC-2 (10) Additional FedRAMP Requirements and Guidance:\
@@ -1753,7 +1761,7 @@ Required if shared/group accounts are deployed.
 | --------------------------------------------------------- |
 |                                                           |
 
-### AC-2 (12) Control Enhancement (M)
+#### AC-2 (12) Control Enhancement (M)
 
 The organization:
 
@@ -1803,7 +1811,7 @@ The information system enforces approved authorizations for controlling the flow
 | ---------------------------------------------------- |
 |                                                      |
 
-### AC-4 (21) Control Enhancement (M) (H)
+#### AC-4 (21) Control Enhancement (M) (H)
 
 The information system separates information flows logically or physically using \[Assignment: organization-defined mechanisms and/or techniques] to accomplish \[Assignment: organization-defined required separations by types of information].
 
@@ -1856,7 +1864,7 @@ The organization employs the principle of least privilege, allowing only authori
 | ---------------------------------------------------- |
 |                                                      |
 
-### AC-6 (1) Control Enhancement (M)
+#### AC-6 (1) Control Enhancement (M)
 
 The organization explicitly authorizes access to \[Assignment: organization-defined security functions (deployed in hardware, software, and firmware) and security-relevant information].
 
@@ -2356,7 +2364,7 @@ The organization:
 
 ### Awareness and Training (AT)
 
-### AT-1 Security Awareness and Training Policy and Procedures (L) (M)
+#### AT-1 Security Awareness and Training Policy and Procedures (L) (M)
 
 The organization:
 
@@ -2384,7 +2392,7 @@ The organization:
 | Part b1:                                             |
 | Part b2:                                             |
 
-### AT-2 Security Awareness (L) (M) (H)
+#### AT-2 Security Awareness (L) (M) (H)
 
 The organization provides basic security awareness training to information system users (including managers, senior executives, and contractors):
 
@@ -2405,7 +2413,7 @@ The organization provides basic security awareness training to information syste
 | Part b1:                                             |
 | Part b2:                                             |
 
-### AT-2 (2) Control Enhancement (M) (H)
+#### AT-2 (2) Control Enhancement (M) (H)
 
 The organization includes security awareness training on recognizing and reporting potential indicators of insider threat.
 
@@ -2420,7 +2428,7 @@ The organization includes security awareness training on recognizing and reporti
 | -------------------------------------------------------- |
 | Part a:                                                  |
 
-### AT-3 Role-Based Security Training (L) (M) (H)
+#### AT-3 Role-Based Security Training (L) (M) (H)
 
 The organization provides role-based security training to personnel with assigned security roles and responsibilities:
 
@@ -2441,7 +2449,7 @@ The organization provides role-based security training to personnel with assigne
 | Part b:                                              |
 | Part c:                                              |
 
-### AT-4 Security Training Records (L) (M)
+#### AT-4 Security Training Records (L) (M)
 
 The organization:
 
@@ -2463,9 +2471,9 @@ The organization:
 | title: Audit and Accountability (AU)                 |
 | ---                                                  |
 
+### Audit and Accountability (AU)
 
-
-### AU-1 Audit and Accountability Policy and Procedures (L) (M)
+#### AU-1 Audit and Accountability Policy and Procedures (L) (M)
 
 The organization:
 
@@ -2492,7 +2500,7 @@ The organization:
 | Part a                                               |
 | Part b                                               |
 
-### AU-2 Audit Events (L) (M) (H)
+#### AU-2 Audit Events (L) (M) (H)
 
 The organization:
 
@@ -2518,7 +2526,7 @@ The organization:
 | Part c                                               |
 | Part d                                               |
 
-### AU-2 (3) Control Enhancement (M) (H)
+#### AU-2 (3) Control Enhancement (M) (H)
 
 The organization reviews and updates the audited events \[FedRAMP Assignment: annually or whenever there is a change in the threat environment].\
 AU-2 (3) Additional FedRAMP Requirements and Guidance: Guidance: Annually or whenever changes in the threat environment are communicated to the service provider by the JAB/AO.
