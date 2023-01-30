@@ -13,5 +13,5 @@
 
 ## Systems Security Plan by Section
 
-* [Access Control (AC)](systems-security-plan-by-section/access-control-ac.md)
-* [Awareness and Training (AT)](systems-security-plan-by-section/awareness-and-training-at.md)
+* [Access Control (AC)](systems-security-plan-by-section/ac.md)
+* [Awareness and Training (AT)](systems-security-plan-by-section/at.md)
