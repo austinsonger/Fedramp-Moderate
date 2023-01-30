@@ -13,20 +13,32 @@ The organization:
    1. Access control policy \[FedRAMP Assignment: at least every 3 years]; and
    2. Access control procedures \[FedRAMP Assignment: at least annually].
 
-| AC-1                                          | Control Summary Information                                                                                                            |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Responsible Role:                             |                                                                                                                                        |
-| Parameter AC-1(a):                            |                                                                                                                                        |
-| Parameter AC-1(b)(1):                         |                                                                                                                                        |
-| Parameter AC-1(b)(2):                         |                                                                                                                                        |
-| Implementation Status (check all that apply): | <p>☐ Implemented<br>☐ Partially implemented<br>☐ Planned<br>☐ Alternative implementation<br>☐ Not applicable</p>                       |
-| Control Origination (check all that apply):   | <p>☐ Service Provider Corporate<br>☐ Service Provider System Specific<br>☐ Service Provider Hybrid (Corporate and System Specific)</p> |
+| AC-1                                          | Control Summary Information                                                                                                                                                                                                                                                                       |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Responsible Role:                             |                                                                                                                                                                                                                                                                                                   |
+| Parameter AC-1(a):                            |                                                                                                                                                                                                                                                                                                   |
+| Parameter AC-1(b)(1):                         |                                                                                                                                                                                                                                                                                                   |
+| Parameter AC-1(b)(2):                         |                                                                                                                                                                                                                                                                                                   |
+| Implementation Status (check all that apply): | <p></p><ul class="contains-task-list"><li><input type="checkbox">Implemented</li><li><input type="checkbox">Partially implemented</li><li><input type="checkbox">Planned</li><li><input type="checkbox">Alternative Implementation</li><li><input type="checkbox">Not Applicable</li></ul><p></p> |
+| Control Origination (check all that apply):   | <p>☐ Service Provider Corporate<br>☐ Service Provider System Specific<br>☐ Service Provider Hybrid (Corporate and System Specific)</p>                                                                                                                                                            |
 
 | AC-1 What is the solution and how is it implemented? |
 | ---------------------------------------------------- |
 | Part a                                               |
 | Part b1                                              |
 | Part b2                                              |
+
+
+
+
+
+* [ ] Implemented
+* [ ] Partially implemented
+* [ ] Planned
+* [ ] Alternative implementation
+* [ ] Not applicable
+
+
 
 #### AC-2 Account Management (L) (M)
 
