@@ -83,25 +83,29 @@ Cloud Service Provider Signatures
 | ---------------------- | -------------- | ---- | -------------- | - |
 | Name                   | \<Enter Name>  | Date | \<Select Date> |   |
 | Title                  | \<Enter Title> |      |                |   |
-| Cloud Service Provider | CSP Name       |      |                |   |
-|                        |                |      |                |   |
-|                        |                |      |                |   |
-|                        |                |      |                |   |
-| Name                   | \<Enter Name>  | Date | \<Select Date> |   |
-| Title                  | \<Enter Title> |      |                |   |
-| Cloud Service Provider | CSP Name       |      |                |   |
-|                        |                |      |                |   |
-|                        |                |      |                |   |
-|                        |                |      |                |   |
-| Name                   | \<Enter Name>  | Date | \<Select Date> |   |
-| Title                  | \<Enter Title> |      |                |   |
-| Cloud Service Provider | CSP Name       |      |                |   |
-|                        |                |      |                |   |
+| Cloud Service Provider |                |      |                |   |
+| Date                   |                |      |                |   |
 |                        |                |      |                |   |
 
-&#x20;__&#x20;
+|                        |                |      |                |   |
+| ---------------------- | -------------- | ---- | -------------- | - |
+| Name                   | \<Enter Name>  | Date | \<Select Date> |   |
+| Title                  | \<Enter Title> |      |                |   |
+| Cloud Service Provider |                |      |                |   |
+| Date                   |                |      |                |   |
+|                        |                |      |                |   |
 
-\
+
+|                        |                |      |                |   |
+| ---------------------- | -------------- | ---- | -------------- | - |
+| Name                   | \<Enter Name>  | Date | \<Select Date> |   |
+| Title                  | \<Enter Title> |      |                |   |
+| Cloud Service Provider |                |      |                |   |
+| Date                   |                |      |                |   |
+|                        |                |      |                |   |
+
+
+
 
 
 ## 1.   Information System Name/Title <a href="#_heading-h.2et92p0" id="_heading-h.2et92p0"></a>
