@@ -4,7 +4,7 @@
 
 ## Plans
 
-* [Systems Security Plan](ssp.md)
+* [Systems Security Plan](plans/ssp.md)
 * [Plan of Action and Milestones](plans/plan-of-action-and-milestones.md)
 
 ## Policies and Procedures
