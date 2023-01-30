@@ -518,16 +518,8 @@ _Table 10-1 Ports, Protocols and Services_
 
 | Ports (TCP/UDP)\* | Protocols | Services   | Purpose                                                                                                                                 | Used By             |
 | ----------------- | --------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| 22                | TCP       | SSH        | Private SSH                                                                                                                             | FormAssembly Admins |
+| 22                | TCP       | SSH        | Private SSH                                                                                                                             |  Admins             |
 | 80                | TCP       | HTTP       | TLS 1.2                                                                                                                                 | Customer            |
-| 9000              | TCP       | ELB        | HAProxy for Elastic, this sets up a listener on port 9000 in HTTP mode with statistics enabled.                                         | FormAssembly Admins |
-| 8080              | TCP       | Custom TCP | HAProxy - installed in front of an existing web server that needs some DoS protection.                                                  | FormAssembly Admins |
-| 8443              | TCP       | Custom TCP | ELB - load balancer with a listener that accepts HTTP requests on port 80 and accepts HTTPS requests on port 443.                       | FormAssembly Admins |
-| 443               | TCP       | HTTPS      | Bastion Host - Reduces exposure of servers within the VPC, so a bastion host was created.                                               | FormAssembly Admins |
-| 25                | TCP       | SMTP       | Mail-server- Email through Amazon SES and connectors.                                                                                   | FormAssembly Admins |
-| 3306              | TCP       | Aurora     | Aurora - Amazon Aurora is a MySQL and PostgreSQL- compatible relational database.                                                       | FormAssembly Admins |
-| All               | ICMP      | MySQL      | MySQL - open-source relational database and Amazon RDS.                                                                                 | FormAssembly Admins |
-| 2049              | TCP       | NFS        | RHEL- allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. | FormAssembly Admins |
 
 \* Transmission Control Protocol (TCP), User Diagram Protocol (UDP)
 
