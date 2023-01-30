@@ -1177,7 +1177,7 @@ _Table 9-1. Personnel Roles and Privileges_
 |      |                      |                                                                 |                   |                       |                     |
 |      |                      |                                                                 |                   |                       |                     |
 
-There are currently five internal personnel and 0 external personnel.  Within one year, it is anticipated that there will be five internal personnel and 0 external personnel.
+
 
 ### 9.4. Network Architecture <a href="#_heading-h.1v1yuxt" id="_heading-h.1v1yuxt"></a>
 
