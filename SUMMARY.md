@@ -1,11 +1,11 @@
 # Table of contents
 
-* [Systems Security Plan](README.md)
+* [FedRAMP](README.md)
+
+## Plans
+
+* [Systems Security Plan](plans/systems-security-plan.md)
 
 ## Policies and Procedures
 
 * [Policies](policies-and-procedures/policies.md)
-
-***
-
-* [Page 1](page-1.md)
