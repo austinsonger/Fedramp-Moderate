@@ -4,7 +4,7 @@
 
 ## Plans
 
-* [Systems Security Plan](plans/systems-security-plan.md)
+* [Systems Security Plan](page-1.md)
 
 ## Policies and Procedures
 
