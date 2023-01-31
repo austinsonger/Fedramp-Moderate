@@ -228,15 +228,6 @@ _Table 3-1. Information System Owner_
 
 ## 4.   Authorizing Official <a href="#_heading-h.44sinio" id="_heading-h.44sinio"></a>
 
-_Instruction: The Authorizing Official is determined by the path that the CSP is using to obtain an authorization._
-
-_JAB P-ATO: FedRAMP, JAB, as comprised of member representatives from the General Services Administration (GSA), Department of Defense (DoD) and Department of Homeland Security (DHS)_
-
-_Agency Authority to Operate (ATO): Agency Authorizing Official name, title and contact information_
-
-_Delete this and all other instructions from your final version of this document._
-
-&#x20;
 
 The Authorizing Official (AO) or Designated Approving Authority (DAA) for this information system is the _Insert AO information as instructed above_.
 
@@ -244,11 +235,6 @@ The Authorizing Official (AO) or Designated Approving Authority (DAA) for this i
 
 ## 5.   Other Designated Contacts <a href="#_heading-h.2jxsxqh" id="_heading-h.2jxsxqh"></a>
 
-_Instruction: AOs should use the following section to identify points of contact that understand the technical implementations of the identified cloud system.  AOs should edit, add, or modify the contacts in this section as they see fit._
-
-_Delete this and all other instructions from your final version of this document._
-
-&#x20;
 
 The following individual(s) identified below possess in-depth knowledge of this system and/or its functions and operation.&#x20;
 
@@ -341,13 +327,7 @@ _Table 7-1. System Status_
 | ☐             | Major Modification | The system is undergoing a major change, development, or transition. |
 | ☐             | Other              | Explain: Click here to enter text.                                   |
 
-&#x20;
 
-_Instruction: Select as many status indicators as apply.  If more than one status is selected, list which components of the system are covered under each status indicator._
-
-_Delete this and all other instructions from your final version of this document._
-
-&#x20;
 
 ## 8.   Information System Type <a href="#_heading-h.qsh70q" id="_heading-h.qsh70q"></a>
 
@@ -366,15 +346,14 @@ Information systems, particularly those based on cloud architecture models, are 
 | Does the system offer various developer toolkits and APIs?                       | Yes        |
 | Does the system offer only applications that are available by obtaining a login? | Yes        |
 
-&#x20;
 
-The layers of the Enter Information System Abbreviation defined in this SSP are indicated in Table 8-1 Service Layers Represented in this SSP that follows.&#x20;
 
-_Instruction: Check all layers that apply._
+The layers of the Enter Information System Abbreviation defined in this SSP are indicated in Table 8-1 Service Layers Represented in this SSP that follows.
 
-_Delete this and all other instructions from your final version of this document._
 
-&#x20;
+
+
+
 
 _Table 8-1. Service Layers Represented in this SSP_
 
@@ -385,19 +364,17 @@ _Table 8-1. Service Layers Represented in this SSP_
 | ☐                                    | Infrastructure as a Service (IaaS) | General Support System             |
 | ☐                                    | Other                              | Explain: Click here to enter text. |
 
-&#x20;
 
-Note: Refer to NIST SP 800-145 for information on cloud computing architecture models.&#x20;
 
-&#x20;
+Note: Refer to NIST SP 800-145 for information on cloud computing architecture models.
+
+
 
 ### 8.2. Cloud Deployment Models <a href="#_heading-h.2p2csry" id="_heading-h.2p2csry"></a>
 
 Information systems are made up of different deployment models.  The deployment models of the Enter Information System Abbreviation that are defined in this SSP and are not leveraged by any other FedRAMP Authorizations, are indicated in Table 8-2 Cloud Deployment Model Represented in this SSP that follows.
 
-_Instruction: Check deployment model that applies._
 
-_Delete this and all other instructions from your final version of this document._
 
 _Table 8-2. Cloud Deployment Model Represented in this SSP_
 
@@ -410,9 +387,7 @@ _Table 8-2. Cloud Deployment Model Represented in this SSP_
 
 ### 8.3. Leveraged Authorizations <a href="#_heading-h.3o7alnk" id="_heading-h.3o7alnk"></a>
 
-_Instruction: The FedRAMP program qualifies different service layers for Authorizations.  One or multiple service layers can be qualified in one System Security Plan. If a lower-level layer has been granted an Authorization and another higher-level layer represented by this SSP plans to leverage a lower layer’s Authorization, this System Security Plan must clearly state that intention.  If an information system does not leverage any pre-existing Authorizations, write “None” in the first column of the table that follows.  Add as many rows as necessary in the table that follows._
 
-_Delete this and all other instructions from your final version of this document._
 
 The Enter Information System Abbreviation Choose an item leverages a pre-existing FedRAMP Authorization.  FedRAMP Authorizations leveraged by this Enter Information System Abbreviation are listed in Table 8-3 Leveraged Authorizations that follows.
 
@@ -426,33 +401,18 @@ _Table 8-3. Leveraged Authorizations_
 
 ## 9.   General System Description <a href="#_heading-h.ihv636" id="_heading-h.ihv636"></a>
 
-This section includes a general description of the Enter Information System Abbreviation.&#x20;
+
+
+
 
 ### 9.1. System Function or Purpose <a href="#_heading-h.32hioqz" id="_heading-h.32hioqz"></a>
 
-_Instruction: In the space that follows, describe the purpose and functions of this system._
 
-_Delete this and all other instructions from your final version of this document._
 
-&#x20;
 
 ### 9.2. Information System Components and Boundaries <a href="#_heading-h.41mghml" id="_heading-h.41mghml"></a>
 
-_Instruction: In the space that follows, provide an explicit definition of the system’s Authorization Boundary.  Provide a diagram that portrays this Authorization Boundary and all its connections and components, including the means for monitoring and controlling communications at the external boundary and at key internal boundaries within the system. Address all components and managed interfaces of the information system authorized for operation (e.g., routers, firewalls)._
 
-_The diagram must include a predominant border drawn around all system components and services included in the authorization boundary. The diagram must be easy to read and understand._
-
-_Formal names of components as they are known at the service provider organization in functional specifications, configuration guides, other documents and live configurations shall be named on the diagram and described. Components identified in the Boundary diagram should be consistent with the Network diagram and the inventory(ies). Provide a key to symbols used.  Ensure consistency between the boundary and network diagrams and respective descriptions (Section 9.4) and the appropriate Security Controls \[AC-20, CA-3(1)]._&#x20;
-
-_Additional FedRAMP Requirements and Guidance:_
-
-_Guidance: See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents> FedRAMP Authorization Boundary Guidance_
-
-&#x20;__ [_https://www.fedramp.gov/documents/_](https://www.fedramp.gov/documents/)
-
-&#x20;__&#x20;
-
-_Delete this and all other instructions from your final version of this document._
 
 A detailed and explicit definition of the system authorization boundary diagram is represented in Figure 9-1 Authorization Boundary Diagram below.
 
